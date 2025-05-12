@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* Light Theme */
+:root {
+  --bg-color: #fceded;
+  --text-color: #da811b;
+  --card-bg: #f9f9f9;
+  --border-color: #ddd;
+  --txt-p-color: black;
+  --txt-p-color1: black;
+  --txt-p-color2: black;
+  --txt-p-color3: black;
+  --txt-p-color4: black;
+  --txt-p-color5: white;
+  font-weight: 300;
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+  --text-color: #f1f5f9;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+  --txt-p-color: grey;
+  --txt-p-color1: white;
+  --txt-p-color2: white;
+  --txt-p-color3: white;
+  --txt-p-color4: black;
+  font-weight: 300;
+}
+
+/* Global Body */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dark theme background */
+[data-theme='dark'] body {
+  --bg-color: #05011E;
+}
+.ic:hover{
+  color:#83c9f8;
+}
+
+.it {
+  background-image: url("https://static.tildacdn.com/tild6261-3364-4637-a533-383932646565/anima3.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.drop-shadow-glow {
+  text-shadow: 0 0 6px rgba(59, 130, 246, 0.7);
+}
+
+
+.glow-button {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.7),
+              0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+.glow-icon {
+  filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.6));
+  transition: transform 0.3s;
+}
+.glow-icon:hover {
+  transform: scale(1.1);
+}
